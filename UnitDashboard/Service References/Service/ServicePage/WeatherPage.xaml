@@ -1,0 +1,115 @@
+﻿<Page x:Class="UnitDashboard.Service.WeatherPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="300"
+	  Title="WeatherPage">
+    <Border
+        Name="Box"
+        BorderBrush="Black"
+        BorderThickness="1">
+        <Grid
+            Margin="3">
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition 
+                    Width="0.1*"/>
+                <ColumnDefinition 
+                    Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Viewbox
+                Grid.Column="0"
+                Grid.Row="0"
+                Grid.ColumnSpan="2"
+                HorizontalAlignment="Left">
+                <TextBlock>
+                    Country:
+                </TextBlock>
+            </Viewbox>
+            <Viewbox
+                HorizontalAlignment="Left"
+                Grid.Row="1"
+                Grid.Column="1">
+                <TextBlock
+                    Name="FBWeather_1" />
+            </Viewbox>
+            <Viewbox
+                Grid.Column="0"
+                Grid.Row="2"
+                Grid.ColumnSpan="2"
+                HorizontalAlignment="Left">
+                <TextBlock>
+                    City:
+                </TextBlock>
+            </Viewbox>
+            <Viewbox
+                HorizontalAlignment="Left"
+                Grid.Row="3"
+                Grid.Column="1">
+                <TextBlock
+                    Name="FBWeather_2" />
+            </Viewbox>
+            <Viewbox
+                Grid.Column="0"
+                Grid.Row="4"
+                Grid.ColumnSpan="2"
+                HorizontalAlignment="Left">
+                <TextBlock>
+                    Temperature:
+                </TextBlock>
+            </Viewbox>
+            <Viewbox
+                HorizontalAlignment="Left"
+                Grid.Row="5"
+                Grid.Column="1">
+                <TextBlock
+                    Name="FBWeather_3" />
+            </Viewbox>
+            <Viewbox
+                Grid.Column="0"
+                Grid.Row="6"
+                Grid.ColumnSpan="2"
+                HorizontalAlignment="Left">
+                <TextBlock>
+                    Relative humidity:
+                </TextBlock>
+            </Viewbox>
+            <Viewbox
+                HorizontalAlignment="Left"
+                Grid.Row="7"
+                Grid.Column="1">
+                <TextBlock
+                    Name="FBWeather_4" />
+            </Viewbox>
+            <Viewbox
+                Grid.Column="0"
+                Grid.Row="8"
+                Grid.ColumnSpan="2"
+                HorizontalAlignment="Left">
+                <TextBlock>
+                    Pressure:
+                </TextBlock>
+            </Viewbox>
+            <Viewbox
+                HorizontalAlignment="Left"
+                Grid.Row="9"
+                Grid.Column="1">
+                <TextBlock
+                    Name="FBWeather_5" />
+            </Viewbox>
+        </Grid>
+    </Border>
+</Page>

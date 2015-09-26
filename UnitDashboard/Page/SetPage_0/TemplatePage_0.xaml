@@ -1,0 +1,128 @@
+﻿<Page x:Class="UnitDashboard.SetPage_0.TemplatePage_0"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="300"
+	Title="TemplatePage_0">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition
+                    Height="0.2*"/>
+            <RowDefinition
+                    Height="0.2*"/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition
+                    Width="2*"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <DockPanel
+            Grid.Row="0"
+            Grid.Column="0"
+            Grid.ColumnSpan="2">
+            <Border
+                Background="Yellow"
+                CornerRadius="10"
+                Margin="1"
+                BorderBrush="Black"
+                BorderThickness="1">
+                <Viewbox
+                    VerticalAlignment="Center"
+                    HorizontalAlignment="Center">
+                    <TextBlock
+                        FontFamily="Times New Roman">
+                        Title
+                    </TextBlock>
+                </Viewbox>
+            </Border>
+        </DockPanel>
+
+        <DockPanel
+            Grid.Row="1"
+            Grid.Column="0"
+            Grid.ColumnSpan="2">
+            <Border
+                Background="Lime"
+                CornerRadius="10"
+                Margin="1"
+                BorderBrush="Black"
+                BorderThickness="1">
+                <Viewbox
+                    VerticalAlignment="Center"
+                    HorizontalAlignment="Center">
+                    <TextBlock
+                        FontFamily="Times New Roman">
+                        Block_0
+                    </TextBlock>
+                </Viewbox>
+            </Border>
+        </DockPanel>
+
+        <DockPanel
+            Grid.Row="2"
+            Grid.RowSpan="2"
+            Grid.Column="0">
+            <Border
+                Background="LimeGreen"
+                CornerRadius="10"
+                BorderBrush="Black"
+                Margin="1"
+                BorderThickness="1">
+                <Viewbox
+                    VerticalAlignment="Center"
+                    HorizontalAlignment="Center">
+                    <TextBlock
+                         FontFamily="Times New Roman">
+                         Block_1
+                    </TextBlock>
+                </Viewbox>
+            </Border>
+        </DockPanel>
+
+        <DockPanel
+            Grid.Row="2"
+            Grid.Column="1">
+            <Border
+                Background="LimeGreen"
+                CornerRadius="10"
+                Margin="1"
+                BorderBrush="Black"
+                BorderThickness="1">
+                <Viewbox
+                    VerticalAlignment="Center"
+                    HorizontalAlignment="Center">
+                    <TextBlock
+                         FontFamily="Times New Roman">
+                         Block_2
+                    </TextBlock>
+                </Viewbox>
+            </Border>
+        </DockPanel>
+
+        <DockPanel
+            Grid.Row="3"
+            Grid.Column="1">
+            <Border
+                Background="LimeGreen"
+                CornerRadius="10"
+                Margin="1"
+                BorderBrush="Black"
+                BorderThickness="1">
+                <Viewbox
+                    VerticalAlignment="Center"
+                    HorizontalAlignment="Center">
+                    <TextBlock
+                        FontFamily="Times New Roman">
+                        Block_3
+                    </TextBlock>
+                </Viewbox>
+            </Border>
+        </DockPanel>
+    </Grid>
+</Page>

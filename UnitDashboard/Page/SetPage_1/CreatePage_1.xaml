@@ -1,0 +1,70 @@
+﻿<Page x:Class="UnitDashboard.SetPage_1.CreatePage_1"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="300"
+      Loaded="Page_Loaded"
+	Title="CreatePage_1">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition
+                Width="2*"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Border
+            Background="Azure"
+            CornerRadius="5"
+            BorderBrush="Black"
+            BorderThickness="1"
+            Margin="1"
+            Grid.Column="0">
+            <Grid
+                Margin="3">
+                <Grid.RowDefinitions>
+                    <RowDefinition
+                        Height="0.04*"/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Viewbox
+                    Grid.Row="0">
+                    <TextBlock
+                        FontFamily="Times New Roman">
+                        Выбранный шаблон
+                    </TextBlock>
+                </Viewbox>
+                <Frame
+                    Grid.Row="1"
+                    Source="TemplatePage_1.xaml"/>
+            </Grid>
+        </Border>
+        <Border
+            Background="Azure"
+            CornerRadius="5"
+            BorderBrush="Black"
+            BorderThickness="1"
+            Margin="1"
+            Grid.Column="1">
+            <Grid
+                Margin="3">
+                <Grid.RowDefinitions>
+                    <RowDefinition
+                        Height="0.04*"/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Viewbox
+                    Grid.Row="0">
+                    <TextBlock
+                        FontFamily="Times New Roman">
+                        Настройка блоков
+                    </TextBlock>
+                </Viewbox>
+                <Border
+                    Name="box"
+                    Grid.Row="1"/>
+            </Grid>
+        </Border>
+    </Grid>
+</Page>
